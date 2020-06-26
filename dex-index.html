@@ -1,0 +1,231 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Biomed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link href="css/styles1.css" type="text/css" rel="stylesheet" media="all">
+<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+</head>
+<body>
+<section class="register">
+  <div class="register-full">
+    <div class="register-right">
+      <div class="register-in">
+        <h1>Member details update</h1>
+   <?php include('server.php') ?>     <div class="register-form">
+          <form action="logout.html" method="post">
+            <div class="fields-grid">
+			  <?php include('errors.php'); ?>
+              <div class="styled-input">
+                <input type="text" name="Yourname" required="" value="Rtr.">
+                <label>Rotractor Name</label>
+                <span></span> </div>
+              <div class="styled-input">
+                <input type="email" name="Email" required="">
+                <label>Email</label>
+                <span></span> </div>
+              <div class="styled-input">
+                <input type="tel" name="Phone" required="">
+                <label>Phone Number</label>
+                <span></span> </div>
+              <div class="styled-input">
+                <h2>Sex :</h2>
+                <input type="radio" name="gender" value="male" checked>
+                Male
+                <input type="radio" name="gender" value="female">
+                Female </div>
+              <div class="styled-input">
+                <label>Username</label>
+                <input type="text" name="username" value="">
+              </div>
+              <div class="styled-input">
+                <label>Email</label>
+                <input type="email" name="email" value="">
+              </div>
+              <div class="styled-input">
+                <label>Password</label>
+                <input type="password" name="password_1">
+              </div>
+              <div class="styled-input">
+                <label>Confirm password</label>
+                <input type="password" name="password_2">
+              </div>
+              <div class="styled-input">
+                <label>Date of birth</label>
+                <input type="date" name="date_of_birth" value="">
+              </div>
+              <div class="styled-input">
+                <label>Gender</label>
+                <input type="text" name="gender" value="">
+              </div>
+              <div class="styled-input">
+                <label>Mobile number</label>
+                <input type="number" name="mobile_no" value="">
+              </div>
+              <div class="styled-input">
+                <label>Blood group</label>
+                <input type="text" name="blood_group" value="">
+              </div>
+              <div class="styled-input">
+                <label>Address</label>
+                <input type="text" name="address" value="">
+              </div>
+			  <div class="styled-input">
+				
+                <input class="date" id="datepicker" name="Text" type="text" value="Date of Joining" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Date of Joining';}" required="">
+              </div>
+<!--
+              <div class="styled-input">
+                <label>Date of Joining</label>
+                <input type="date" name="date_of_joining" value="">
+              </div>
+-->
+              <div class="styled-input">
+                <label>Hobbies</label>
+                <input type="text" name="hobbies" value="">
+              </div>
+              <div class="styled-input">
+                <label>Interested in</label>
+                <input type="text" name="interested_in" value="">
+              </div>
+              <div class="styled-input">
+                <label>Passion</label>
+                <input type="text" name="passion" value="">
+              </div>
+              <div class="styled-input">
+                <label>Games interested in</label>
+                <input type="text" name="games_interested_in" value="">
+              </div>
+              <div class="styled-input">
+                <label>Running any NGO</label>
+                <input type="text" name="running_any_NGO" value="">
+              </div>
+              <div class="styled-input">
+                <label>Running any youtube channel</label>
+                <input type="text" name="youtube_channel" value="">
+              </div>
+              <div class="styled-input">
+                <label>Profession</label>
+                <input type="text" name="profession" value="">
+              </div>
+              <div class="styled-input">
+                <label>College name </label>
+                <input type="text" name="institute_name" value="">
+              </div>
+              <div class="styled-input">
+                <label>Department </label>
+                <input type="text" name="department" value="">
+              </div>
+              <div class="styled-input">
+                <label>Interested in scienc and technology</label>
+                <input type="text" name="scienceand_technology" value="">
+              </div>
+              <div class="styled-input">
+                <label>Any startups</label>
+                <input type="text" name="start_ups" value="">
+              </div>
+              <div class="styled-input">
+                <label>Any musical instrument</label>
+                <input type="text" name="musical_instrument" value="">
+              </div>
+              <div class="styled-input">
+                <label>Address proof</label>
+                <input type="text" name="address_proof" value="">
+              </div>
+              <div class="styled-input">
+                <label>Id proof</label>
+                <input type="file" name="id_proof" value="">
+              </div>
+              <div class="styled-input">
+                <label>Personal Photo</label>
+                <input type="text" name="personal_photo" value="">
+              </div>
+              <div class="styled-input">
+                <select id="category0" required="">
+                  <option value="">Specialization*</option>
+                  <option value="">Cardiology</option>
+                  <option value="">Heart Surgery</option>
+                  <option value="">Skin Care</option>
+                  <option value="">Body Check-up</option>
+                  <option value="">Numerology</option>
+                  <option value="">Diagnosis</option>
+                  <option value="">Others</option>
+                </select>
+                <span></span> </div>
+              <div class="styled-input">
+                <select id="category1" required="">
+                  <option value="">Specialization*</option>
+                  <option value="">Cardiology</option>
+                  <option value="">Heart Surgery</option>
+                  <option value="">Skin Care</option>
+                  <option value="">Body Check-up</option>
+                  <option value="">Numerology</option>
+                  <option value="">Diagnosis</option>
+                  <option value="">Others</option>
+                </select>
+                <span></span> </div>
+              <div class="styled-input">
+                <select id="category2" required="">
+                  <option value="">Choose Hospital*</option>
+                  <option value="">Hospital 1</option>
+                  <option value="">Hospital 2</option>
+                  <option value="">Hospital 3</option>
+                  <option value="">Hospital 4</option>
+                  <option value="">Hospital 5</option>
+                </select>
+                <span></span> </div>
+              <div class="styled-input">
+                <input class="date" id="datepicker" name="Text" type="text" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required="">
+              </div>
+              <div class="content-wthree2">
+                <div class="grid-w3layouts1">
+                  <div class="w3-agile1">
+                    <label class="rating">Taking any medications currently?<span>*</span></label>
+                    <ul>
+                      <li>
+                        <input type="radio" id="a-option" name="selector1">
+                        <label for="a-option">Yes </label>
+                        <div class="check"></div>
+                      </li>
+                      <li>
+                        <input type="radio" id="b-option" name="selector1">
+                        <label for="b-option">No</label>
+                        <div class="check">
+                          <div class="inside"></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="styled-input">
+                <label class="list">If yes,Please list it<span></span></label>
+                <textarea></textarea>
+                <span></span> </div>
+              <input type="submit" name="submit" value="Book Appointment">
+              <div class="clear"> </div>
+            </div>
+          </form>
+        </div>
+        <div class="clear"> </div>
+      </div>
+    </div>
+    <div class="clear"> </div>
+  </div>
+  <p class="agile-copyright">© Manibharathi <a href="" target="_blank">mani146</a></p>
+</section>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script>
+		$(function() {
+		$( "#datepicker,#datepicker1" ).datepicker();
+		});
+	</script>
+</body>
+</html>
