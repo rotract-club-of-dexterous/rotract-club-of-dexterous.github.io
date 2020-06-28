@@ -1,6 +1,5 @@
 <?php
 session_start();
-// initializing variables
 $username                     = "";
 $email                        = "";
 $date_of_birth                = "";
@@ -26,12 +25,9 @@ $id_proof                     = "";
 $personal_photo               = "";
 $errors                       = array(); 
 
-// connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'rotract_club');
 
-// REGISTER USER
 if (isset($_POST['reg_user'])) {
-  // receive all input values from the form
   $username                = mysqli_real_escape_string($db, $_POST['username']);
   $email                   = mysqli_real_escape_string($db, $_POST['email']);
   $password_1              = mysqli_real_escape_string($db, $_POST['password_1']);
@@ -57,11 +53,7 @@ if (isset($_POST['reg_user'])) {
   $address_proof           = mysqli_real_escape_string($db, $_POST['address_proof']);    
   $id_proof                = mysqli_real_escape_string($db, $_POST['id_proof']);    
   $personal_photo          = mysqli_real_escape_string($db, $_POST['personal_photo']);
-//  
-//  	
 
-  // form validation: ensure that the form is correctly filled ...
-  // by adding (array_push()) corresponding error unto $errors array
   if (empty($username)) { array_push($errors, "Username is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
@@ -87,15 +79,12 @@ if (isset($_POST['reg_user'])) {
   if (empty($address_proof)) { array_push($errors, "address proof is required"); }
   if (empty($id_proof)) { array_push($errors, "id proof is required"); }
   if (empty($personal_photo)) { array_push($errors, "personal photo is required"); }
-//  
 
-  // first check the database to make sure 
-  // a user does not already exist with the same username and/or email
   $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
-  if ($user) { // if user exists
+  if ($user) { 
     if ($user['username'] === $username) {
       array_push($errors, "Username already exists");
     }
@@ -117,8 +106,6 @@ if (isset($_POST['reg_user'])) {
   }
 }
 
-// ... 
-// LOGIN USER
 if (isset($_POST['login_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
