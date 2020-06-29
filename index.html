@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--<?php include('server.php') ?>-->
+<?php include('server.php') ?>
 <html lang="en">
 <head>
 <title>RC-DEXTEROUS</title>
@@ -18,8 +18,8 @@
         <h1>Member details update</h1>
         <div class="register-form">
           <form action="index.php" method="post">
-            <div class="fields-grid"> 
-              <!--            <?php include('errors.php'); ?>-->
+            <div class="fields-grid">
+              <?php include('errors.php'); ?>
               <div class="styled-input">
                 <input type="text" name="Yourname" required="" value="Rtr.Test">
                 <label>Rotractor Name</label>
@@ -28,8 +28,8 @@
                 <input type="email" name="email" required="test@rc.com">
                 <label>Email</label>
                 <span></span> </div>
-              <div class="styled-input">
-<!--                <label>Country Code</label>-->
+              <div class="styled-input"> 
+                <!--                <label>Country Code</label>--> 
                 <span></span>
                 <select name="countryCode" id="category1">
                   <option  value="" Selected>Choose Country Code</option>
@@ -319,11 +319,11 @@
               <div class="styled-input">
                 <input class="date" id="datepicker" name="date_of_joining" type="text" value="Date of Joining" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Date of Joining';}" required="">
                 <span></span> </div>
-              <div class="styled-input">
-<!--                <label>Country Code</label>-->
+              <div class="styled-input"> 
+                <!--                <label>Country Code</label>--> 
                 <span></span>
                 <select name="countryCode" id="category2">
-				  <option  value="" Selected>Choose Country Code</option>
+                  <option  value="" Selected>Choose Country Code</option>
                   <option data-countryCode="IN" value="91">India (+91)</option>
                   <optgroup label="Other countries">
                   <option data-countryCode="DZ" value="213">Algeria (+213)</option>
