@@ -1,11 +1,15 @@
 <?php
 session_start();
+$rotractor_name               = "";
 $username                     = "";
 $email                        = "";
 $date_of_birth                = "";
 $gender                       = "";
 $blood_group                  = "";
+$country_code                 = "";
 $mobile_no                    = "";
+$wa_country_code              = "";
+$wa_mobile_no                 = "";
 $address                      = "";
 $date_of_joining              = "";
 $hobbies                      = "";
