@@ -148,6 +148,9 @@ https://wordpress.org/plugins/coming2live/
           </div>
           <!-- End / header --> 
           <!--        <div class="Vidage__backdrop"></div>-->
+          <video autoplay muted loop id="myVideo">
+            <source src="FINAL.mp4" type="video/mp4">
+          </video>
           <div class="container">
             <div class="hero__wrapper">
               <div class="row">
@@ -209,7 +212,7 @@ https://wordpress.org/plugins/coming2live/
     </div>
   </template>
   <script>
-    const isMobile = matchMedia('(max-device-width: 20em)').matches;
+    const isMobile = matchMedia('(max-device-width: 500px)').matches;
     const ad = document.currentScript.closest('.ad');
     const content = ad
       .querySelector(isMobile ? '.ad__mobile' : '.ad__desktop')
