@@ -674,8 +674,8 @@ mark, .mark {
 }
 
 .hero__title1 {
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 100px;
+    font-weight: 1000;
     color: #fff;
 }
 @media (min-width: 320px) {
