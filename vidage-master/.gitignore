@@ -1,0 +1,10 @@
+# OS specific
+._*
+.DS_Store
+Thumbs.db
+
+# IDE/Code Editor
+.idea
+
+# Directories
+node_modules

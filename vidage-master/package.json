@@ -1,0 +1,45 @@
+{
+  "name": "vidage",
+  "description": "Set video as the background of your website. Fallbacks to the image, when required.",
+  "main": "dist/vidage.js",
+  "version": "0.5.1",
+  "license": "MIT",
+  "homepage": "https://github.com/dvlden/vidage#readme",
+  "bugs": "https://github.com/dvlden/vidage/issues",
+  "scripts": {
+    "dev": "rollup -c -w -m inline --environment MODE:dev",
+    "build": "rollup -c --environment MODE:production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvlden/vidage.git"
+  },
+  "author": {
+    "name": "Nenad Novaković",
+    "email": "n.dvlden@gmail.com",
+    "url": "https://github.com/dvlden"
+  },
+  "keywords": [
+    "vidage",
+    "video",
+    "background"
+  ],
+  "browserslist": [
+    "last 3 versions",
+    "> 1%"
+  ],
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "lodash-es": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "node-sass": "^4.13.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify": "^6.0.3"
+  }
+}
